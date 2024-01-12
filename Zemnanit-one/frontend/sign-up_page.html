@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+
+  <link rel="stylesheet" href="cssFiles/style.css">
+</head>
+<body class="bg-salmon py-20 flex flex-col justify-center items-center gap-10">
+  <header>
+    <div>
+         <nav>
+            <div class="flex justify-between items-center">
+                <div class="px-4 cursor-pointer lg:hidden" id="burger">
+                    <svg class="w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <div>
+                    <span class="font-bold lg:hidden text-xl">Home</span>
+                </div>
+                <div>
+                    <a href="mailto:asratmaedot@gmail.com" class="lg:hidden">
+                    <svg class="w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="black"></path> </g></svg></a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <ul class="text-xl mt-4 ml-4 lg:mr-4 hidden lg:block lg:text-right" id="menu">
+                        <a href="home.html" class="lg:border-b-4 border-l-4 lg:border-l-0 border-lime-200 lg:mx-2">Home</a> 
+                        <a href="about_page.html" class="lg:mx-2">About</a> 
+                        <a href="login_page.html" class="lg:mx-2">Login</a>
+                        <a href="sign-up_page.html" class="lg:mx-2">Sign Up</a>
+                        <a href="logout.html" class="lg:mx-2">Testimonials</a>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+        </div>
+</header>
+  <div class="text-center">
+    <h1 class="text-peach text-xl font-bold">
+    Zemnanit Beauty Salons
+  </h1>
+  <p>Create your very own account!</p></div>
+
+<main class="bg-salmon h-full flex flex-col  items-center gap-5">
+  <div class="flex flex-col">
+    <label for="name">Full Name:</label>
+    <input class="p-2 outline-none rounded-lg" id="name" type="text" placeholder="Enter your Full Name">
+  </div>
+  <div class="flex flex-col">
+    <label for="email">Enter your email</label>
+    <input class="p-2 outline-none rounded-lg" id="email" type="text" placeholder="Enter your email">
+  </div>
+  <div class="flex flex-col">
+    <label for="age">Age:</label>
+    <input class="p-2 outline-none rounded-lg" id="age" type="text" placeholder="Enter your age">
+  </div>
+  <div class="flex flex-col">
+    <label for="password">Password</label>
+    <input class="p-2 outline-none rounded-lg" id="password" type="password" placeholder="Enter your password">
+  </div>
+  <div class="flex flex-col">
+    <label for="confirm">Confirm Password</label>
+    <input class="p-2 outline-none rounded-lg" id="confirmPass" type="password" placeholder="Enter your password">
+  </div>
+  <div >
+    <button class=" bg-peach hover:border border-peach border-4 hover:text-peach hover:bg-salmon active:opacity-10 px-2 py-3 rounded-lg text-white font-semibold" type="submit" id="submit">
+      Create Account
+    </button>
+  </div>
+</main>
+<script src="javascript/user-feature/signup.js"></script>
+<script src="javascript/user-feature/manage.js"></script>
+
+</body>
+</html>
