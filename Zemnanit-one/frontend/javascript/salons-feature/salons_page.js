@@ -12,7 +12,7 @@ async function display(){
 
               <div style ="font-size:25px; color: brown; shadow: 0 0 15px red;"><form id="form${element._id}"><input class='input' type="text" name='name' required disabled value="${element.name}"></form></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.location}"></div>
-              <div scope="row" ><button style = "background-color: #2E8BC0; padding: 5px; color:white; font-size:25px;  border-radius:8px; margin:40px" class="book-btn">Book Here</button></div>
+              <div scope="row" ><button onclick="redirect()" style = "background-color: #2E8BC0; padding: 5px; color:white; font-size:25px;  border-radius:8px; margin:40px" class="book-btn">Book Here</button></div>
           </div>
           
           `  
@@ -161,3 +161,7 @@ async function addHotel(e){
    }
    
    }
+   
+function redirect(){
+    window.location.href = 'book.html';
+  }

@@ -10,11 +10,10 @@ async function display(){
               html+=`
               
           <div style="display:grid; grid-template-columns: repeat(5,1fr); margin-top: 20px; margin-left: 40px; margin-right:40px; box-shadow: 0 0 5px black; width:85%; padding:10px ">
-          
 
-              <div style ="font-size:25px; color: brown; shadow: 0 0 15px red;"><form id="form${element._id}"><input class='input' type="text" name='name' required disabled value="${element.name}"></form></div>
-              <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.email}"></div>
-              <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.style}"></div>
+              <div style ="font-size:25px; color: brown; shadow: 0 0 15px red;"><input form="form${element._id}"" class='input' type="text" name='name' required disabled value="${element.fullName}"></div>
+              <div style ="font-size:25px; color: black;"><input form="form${element._id}"" class='input' type="text" name="location" required disabled value="${element.email}"></div>
+              <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.hairStyle}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.date}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.time}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.comment}"></div>

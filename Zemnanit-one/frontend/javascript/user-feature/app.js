@@ -55,27 +55,29 @@ formEL.addEventListener('submit', async (event) => {
 });
 
 
-function displayAppointmentDetails() {
-    let show = '';
-    const appointmentEl = document.querySelector('#appointment');
+// function displayAppointmentDetails() {
+//     let show = '';
+//     const appointmentEl = document.querySelector('#appointment');
   
-    const html = `
-      <div class="text-black"><p>Date: ${date.value}</p></div>
-      <div><p>Time: ${time.value}</p></div>
-      <div><p>Style: ${style.value}</p></div>
-    `;
+//     const html = `
+//       <div class="text-black"><p>Date: ${date.value}</p></div>
+//       <div><p>Time: ${time.value}</p></div>
+//       <div><p>Style: ${style.value}</p></div>
+//     `;
   
-    show += html;
-    appointmentEl.innerHTML = show;
-  }
+//     show += html;
+//     appointmentEl.innerHTML = show;
+//   }
 
-
+function redirect(){
+  window.location.href = 'appointments.html';
+}
 
   function logout() {
     const result = confirm("Are you sure you want to logout?");
   
     if (result) {
-      window.location.href = "login_page.html"; // Redirect to login.html
+      window.location.href = "login_page.html";
     } 
   }
 
