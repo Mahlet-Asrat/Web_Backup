@@ -33,7 +33,7 @@ export class SalonsService {
     }
 
     async delete(id:string):Promise<Salon>{
-        return await this.salonModel.findByIdAndRemove(id);
+        return await this.salonModel.findByIdAndDelete(id);
     }
 
     async update (id:string,salon:Salon):Promise<Salon>{

@@ -1,3 +1,3 @@
 export default{
-    mongoURi:"mongodb://localhost:27017/mukera",
+    mongoURi:"mongodb://127.0.0.1:27017/zemnanit-one",
 };

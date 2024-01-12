@@ -12,12 +12,13 @@ import { UserDataModule } from './user-data/user-data.module';
 import { ConfigModule } from '@nestjs/config';
 import { SalonsModule } from './hotels/salons.module';
 import config from './config/mongo.keys'
+import { BookingModule } from './booking/booking.module';
 
 @Module({
   imports: [UserDataModule,AuthModule, UsersModule,ConfigModule.forRoot(),
     MongooseModule.forRoot(config.mongoURi ),
     UserDataModule,
-    SalonsModule],
+    SalonsModule,BookingModule],
   controllers: [AppController],
   providers: [AppService],
 })
