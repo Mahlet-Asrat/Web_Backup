@@ -84,7 +84,7 @@ login_submit.addEventListener('click', function(e){
             
             let inMemoryToken = res.access_token;
             if (inMemoryToken){
-            location.href = "index.html";
+            location.href = "book.html";
             localStorage.setItem(`user`, JSON.stringify(res));
             }
             else{

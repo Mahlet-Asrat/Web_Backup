@@ -1,3 +1,5 @@
+import { IsEmpty } from "class-validator"
+import { User } from "src/users/users.service"
 
 
 
@@ -8,4 +10,6 @@ export class UpdateBookDto {
   readonly date: string
   readonly time: string
   readonly comment: string
+  @IsEmpty({message:"You can't book"})
+  readonly user:User;
 }

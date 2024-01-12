@@ -1,8 +1,10 @@
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { BookingService } from './booking.service';
 import { Booking } from './schemas/booking.schema';
 import { CreateBookDto } from './dto/create-booking.dto';
 import { UpdateBookDto } from './dto/update-booking.dto';
+import { AuthGuard } from '@nestjs/passport';
+import { LocalAuthGuard } from 'src/auth/guards/local-auth.guard';
 
 @Controller('appointments')
 export class BookingController {
@@ -19,6 +21,7 @@ export class BookingController {
   }
 
   @Post()
+  // @UseGuards(AuthGuard())
   async createBooking(
     @Body() 
     booking: CreateBookDto ): Promise<Booking> {
