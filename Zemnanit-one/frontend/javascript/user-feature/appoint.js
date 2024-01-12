@@ -9,17 +9,18 @@ async function display(){
           data.forEach(element => {
               html+=`
               
-          <div style="display:grid; grid-template-columns: repeat(5,1fr); margin-top: 20px; margin-left: 40px; margin-right:40px; box-shadow: 0 0 5px black; width:85%; padding:10px ">
-
-              <div style ="font-size:25px; color: brown; shadow: 0 0 15px red;"><input form="form${element._id}"" class='input' type="text" name='name' required disabled value="${element.fullName}"></div>
+          <div class="bg-white" style="display:grid; margin-top: 20px; margin-left: 40px; margin-right:40px; box-shadow: 0 0 5px black; width:95%; padding:10px; shadow: 0 0 15px red; ">
+            <div class="flex">
+              <div style ="font-size:25px; color: black;"><input form="form${element._id}"" class='input' type="text" name='name' required disabled value="${element.fullName}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}"" class='input' type="text" name="location" required disabled value="${element.email}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.hairStyle}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.date}"></div>
               <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.time}"></div>
-              <div style ="font-size:25px; color: black;"><input form="form${element._id}" class='input' type="text" name="location" required disabled value="${element.comment}"></div>
-              <div scope="row" ><button style = "background-color: #2E8BC0; padding: 5px; color:white; font-size:25px;  border-radius:8px" class="update-btn">Edit Booking</button></div>
-              <div scope="row" id="${element._id}"><button style = "background-color: #F85C70 ; padding: 5px; margin-left: 9px;  color:white; font-size:25px; border-radius:8px" class="delete-btn">Cancel Booking</button></div>
-
+              </div>
+              <div class="flex justify-center m-5">
+              <div scope="row" ><button style = "padding: 5px; color:white; font-size:25px;  border-radius:8px" class="update-btn bg-peach">Edit Booking</button></div>
+              <div scope="row" id="${element._id}"><button style = " padding: 5px; margin-left: 9px; font-size:25px; border-radius:8px" class="delete-btn bg-salmon">Cancel Booking</button></div>
+            </div>
           </div>
           
           `  
